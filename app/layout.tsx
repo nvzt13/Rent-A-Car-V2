@@ -27,7 +27,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div   className="w-full h-screen bg-custom bg-cover bg-no-repeat bg-center"
+      style={{ backgroundPosition: "50% 90%" }}  >
         {children}
+        </div>
       </body>
     </html>
   );
