@@ -41,7 +41,7 @@ export default function Navbar() {
           </div>
 
           {/* Navbar linkleri - Büyük ekranlar için */}
-          <div className="hidden md:flex space-x-6 mx-4">
+          <div className="hidden lg:flex space-x-6 mx-4">
             <Link href="/" className="text-white hover:text-gray-300">
               Home
             </Link>
@@ -58,7 +58,7 @@ export default function Navbar() {
         </div>
 
         {/* Hamburger Menü Butonu - Küçük ekranlarda gösterilir */}
-        <div className="md:hidden ml-auto"> {/* Sağ tarafa hizaladık */}
+        <div className="flex lg:hidden ml-auto"> {/* Sağ tarafa hizaladık */}
           <button
             onClick={toggleMenu}
             className="text-white focus:outline-none"
@@ -97,7 +97,7 @@ export default function Navbar() {
         </div>
 
         {/* Telefon ve Adres Bilgileri - Büyük ekranlar için */}
-        <div className="hidden md:flex space-x-6 text-white text-sm">
+        <div className="hidden lg:flex space-x-6 text-white text-sm">
           <div>
             <Link href="tel:+11586987258" className="hover:text-gray-300">
               (+1) 158 6987 258
@@ -116,7 +116,7 @@ export default function Navbar() {
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden py-4 bg-black bg-opacity-90 text-white">
+        <div className="lg:hidden py-4 bg-black bg-opacity-90 text-white">
           <Link href="/" className="block hover:text-gray-300" onClick={toggleMenu}>
             Home
           </Link>
