@@ -26,76 +26,72 @@ const Entrance = () => {
   return (
     <>
       <div
-        className={`w-full h-108 sm:h-140 md:h-172 lg:h-screen bg-cover bg-no-repeat absolute bg-center transition-all duration-1000 ${animationClasses[currentAnimation]}`}
+        className={`w-full h-128 sm:h-140 md:h-172 lg:h-screen bg-cover bg-no-repeat absolute bg-center transition-all duration-1000 flex flex-col items-center justify-center ${animationClasses[currentAnimation]}`}
         style={{
           backgroundImage: backgroundImages[currentBackground],
           backgroundPosition: "center",
           zIndex: 0,
         }}
-      ></div>
-      <div className="relative z-10 flex justify-center items-center w-full h-screen">
-      <form className="bg-transparent w-full max-w-lg p-8 rounded-lg flex flex-wrap gap-4 shadow-none justify-center mx-auto">
-  {/* Araç Seçimi */}
-  <div className="mb-4 w-full">
-    <label className="block text-sm font-bold mb-2 text-white" htmlFor="car">
-      Araç Seçimi
-    </label>
-    <input
-      id="car"
-      type="text"
-      className="w-full px-3 py-2 border border-white rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-transparent text-white placeholder-white"
-      placeholder="Araç seçin"
-    />
-  </div>
+      >
+        <div className="w-full hidden md:flex flex-col items-center text-white text-center mb-8">
+          <h1 className="text-5xl font-bold drop-shadow-lg">
+            Arabaya mı ihtiyacınız var?
+          </h1>
+          <h4 className="text-2xl font-light drop-shadow-md">
+            İhtiyacınıza uygun arabayı hemen kiralayın
+          </h4>
+        </div>
+        <div className="form w-full">
+          <form className="bg-transparent mt-12 w-full max-w-7xl  p-8 gap-4 rounded-lg grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-row lg:items-center lg:justify-between shadow-none justify-center items-center mx-auto">
+            {/* Araç Seçimi */}
+            <div className="mb-4 w-full">
+              <input
+                id="car"
+                type="text"
+                className="w-full p-4 border-b-2 border-white focus:outline-none focus:ring-0 bg-transparent text-white placeholder-white"
+                placeholder="Araç seçin"
+              />
+            </div>
 
-  {/* Teslim Alma Tarihi */}
-  <div className="mb-4 w-full">
-    <label className="block text-sm font-bold mb-2 text-white" htmlFor="pickupDate">
-      Teslim Alma Tarihi
-    </label>
-    <input
-      id="pickupDate"
-      type="date"
-      className="w-full px-3 py-2 border border-white rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-transparent text-white"
-    />
-  </div>
+            {/* Teslim Alma Tarihi */}
+            <div className="mb-4 w-full">
+              <input
+                id="pickupDate"
+                type="date"
+                className="w-full p-4 border-b-2 border-white focus:outline-none focus:ring-0 bg-transparent text-white"
+              />
+            </div>
 
-  {/* Telefon No */}
-  <div className="mb-4 w-full">
-    <label className="block text-sm font-bold mb-2 text-white" htmlFor="phone">
-      Telefon Numarası
-    </label>
-    <input
-      id="phone"
-      type="tel"
-      className="w-full px-3 py-2 border border-white rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-transparent text-white placeholder-white"
-      placeholder="Telefon numaranızı girin"
-    />
-  </div>
+            {/* Telefon No */}
+            <div className="mb-4 w-full">
+              <input
+                id="phone"
+                type="tel"
+                className="w-full p-4 border-b-2 border-white focus:outline-none focus:ring-0 bg-transparent text-white placeholder-white"
+                placeholder="Telefon numaranızı girin"
+              />
+            </div>
 
-  {/* Teslim Tarihi */}
-  <div className="mb-4 w-full">
-    <label className="block text-sm font-bold mb-2 text-white" htmlFor="returnDate">
-      Teslim Tarihi
-    </label>
-    <input
-      id="returnDate"
-      type="date"
-      className="w-full px-3 py-2 border border-white rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-transparent text-white"
-    />
-  </div>
+            {/* Teslim Tarihi */}
+            <div className="mb-4 w-full">
+              <input
+                id="returnDate"
+                type="date"
+                className="w-full p-4 border-b-2 border-white focus:outline-none focus:ring-0 bg-transparent text-white"
+              />
+            </div>
 
-  {/* Button */}
-  <div className="w-full">
-    <button
-      type="submit"
-      className="w-full px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-md focus:outline-none"
-    >
-      Araç Bul
-    </button>
-  </div>
-</form>
-
+            {/* Button */}
+            <div className="w-full col-span-1 md:col-span-2 flex justify-center">
+              <button
+                type="submit"
+                className="w-full md:w-1/2 lg:w-full p-4 bg-transparent border border-yellow-400 hover:bg-yellow-700 text-white font-bold rounded-md focus:outline-none"
+              >
+                Araç Bul
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </>
   );
