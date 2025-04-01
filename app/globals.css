@@ -13,34 +13,21 @@
     --foreground: #ededed;
   }
 }
-
 @layer utilities {
   .bg-custom {
-    background-image: url("https://images.wallpaperscraft.com/image/single/bmw_headlights_lights_137326_1920x1080.jpg");
+  background-image: url("https://images.wallpaperscraft.com/image/single/bmw_headlights_lights_137326_1920x1080.jpg");
   }
-
-  /* Özelleştirilmiş Animasyonlar */
-  @keyframes fade {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  }
-
-
-  /* Animasyon sınıfları */
-  .animate-fade {
-    animation: fade 1s ease-in-out;
-  }
+}
 
 body {
   background: var(--background);
   color: var(--foreground);
 }
 
-*{
-  boreder:1px solid
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-600 {
+  animation-delay: 600ms;
 }

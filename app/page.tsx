@@ -1,11 +1,17 @@
-import Header from "./_components/layout/layout/layout/Header";
-import Entrance from "./_components/layout/layout/sections/Entrance";
+import Footer from "./_components/layout/Footer";
+import Header from "./_components/layout/Header";
+import Cars from "./_components/sections/Cars";
+import Entrance from "./_components/sections/Entrance";
+import Promotion from "./_components/sections/Promotion";
+import Marketing from "./_components/sections/Marketing";
 
 export default function Home() {
   return (
-    <div className="h-[200vh]">
-      <Header />
+    <div className="">
       <Entrance />
+      <Promotion />
+      <Cars />
+      <Marketing />
     </div>
   );
 }
