@@ -33,7 +33,7 @@ const Entrance = () => {
         }}
       >
         {/* Karanlık Overlay Ekleyerek Arka Planı Yumuşatıyoruz */}
-        <div className="absolute inset-0 bg-black/60 z-0" />
+        <div className="absolute inset-0 bg-black/60 z-0 h-128 sm:h-140 md:h-172 lg:h-screen " />
 
         <div className="relative w-full flex flex-col items-center justify-center text-white z-10">
           {/* Alt Başlık */}
@@ -54,7 +54,9 @@ const Entrance = () => {
                 <input
                   id="car"
                   type="text"
-                  className="w-full p-4 border-b-2 border-white focus:outline-none focus:ring-0 bg-transparent text-white placeholder-white"
+                  className="w-full p-4 border-b-2 border-gray-400
+                  focus:outline-none focus:ring-0 bg-transparent text-white
+                  placeholder-gray-400"
                   placeholder="Araç seçin"
                 />
               </div>
@@ -64,7 +66,7 @@ const Entrance = () => {
                 <input
                   id="pickupDate"
                   type="date"
-                  className="w-full p-4 border-b-2 border-white focus:outline-none focus:ring-0 bg-transparent text-white"
+                  className="w-full p-4 border-b-2 border-gray-400 focus:outline-none focus:ring-0 bg-transparent text-white"
                 />
               </div>
 
@@ -73,7 +75,7 @@ const Entrance = () => {
                 <input
                   id="phone"
                   type="tel"
-                  className="w-full p-4 border-b-2 border-white focus:outline-none focus:ring-0 bg-transparent text-white placeholder-white"
+                  className="w-full p-4 border-b-2 border-gray-400 focus:outline-none focus:ring-0 bg-transparent text-white placeholder-gray-400"
                   placeholder="Telefon numaranızı girin"
                 />
               </div>
@@ -83,7 +85,7 @@ const Entrance = () => {
                 <input
                   id="returnDate"
                   type="date"
-                  className="w-full p-4 border-b-2 border-white focus:outline-none focus:ring-0 bg-transparent text-white"
+                  className="w-full p-4 border-b-2 border-gray-400 focus:outline-none focus:ring-0 bg-transparent text-white"
                 />
               </div>
 
