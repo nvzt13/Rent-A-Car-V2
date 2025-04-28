@@ -54,5 +54,5 @@ export const Promotion = () => {
     </section>
   );
 };
-
+//test
 export default Promotion;
